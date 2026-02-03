@@ -1,6 +1,5 @@
 .window{
-    height: 400px;
-    width: 300px;
+    height: 100%;
     background-color: black;
     border-radius: 0.75rem;
     overflow: hidden;
@@ -16,6 +15,7 @@
         gap: 1.5rem;
         align-items: center;
         border-bottom: 1px solid whitesmoke;
+
         .dots{
             display: flex;
             gap: 0.25rem;
@@ -37,8 +37,9 @@
                 background-color: rgb(23, 132, 23);
             }
         }
+    }
 
-
-        
+    .main-component{
+        height: 100%;
     }
 }

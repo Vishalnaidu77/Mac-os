@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400",
+    "title": "E-Commerce Platform",
+    "description": "Full-stack e-commerce application with payment integration, user authentication, and admin dashboard",
+    "tags": ["React", "Node.js", "MongoDB", "Stripe"],
+    "repoLink": "https://github.com/username/ecommerce-platform",
+    "demoLink": "https://ecommerce-demo.vercel.app"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400",
+    "title": "Task Management App",
+    "description": "Collaborative task management tool with real-time updates, drag-and-drop functionality, and team features",
+    "tags": ["Vue.js", "Firebase", "Tailwind CSS"],
+    "repoLink": "https://github.com/username/task-manager",
+    "demoLink": "https://taskmanager-demo.netlify.app"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400",
+    "title": "Weather Dashboard",
+    "description": "Real-time weather dashboard with forecasts, maps, and location-based weather alerts",
+    "tags": ["JavaScript", "API Integration", "Chart.js"],
+    "repoLink": "https://github.com/username/weather-dashboard",
+    "demoLink": "https://weather-dashboard-demo.com"
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400",
+    "title": "Social Media Clone",
+    "description": "Instagram-like social media platform with posts, stories, likes, comments, and user profiles",
+    "tags": ["React", "Express", "PostgreSQL", "AWS S3"],
+    "repoLink": "https://github.com/username/social-media-clone",
+    "demoLink": "https://socialmedia-demo.herokuapp.com"
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400",
+    "title": "Portfolio Website",
+    "description": "Modern portfolio website with animations, dark mode, and responsive design",
+    "tags": ["Next.js", "Framer Motion", "CSS Modules"],
+    "repoLink": "https://github.com/username/portfolio-website",
+    "demoLink": "https://portfolio-demo.vercel.app"
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400",
+    "title": "Blog Platform",
+    "description": "Full-featured blogging platform with markdown support, SEO optimization, and comment system",
+    "tags": ["Gatsby", "GraphQL", "Contentful", "Netlify"],
+    "repoLink": "https://github.com/username/blog-platform",
+    "demoLink": "https://blog-platform-demo.com"
+  },
+  {
+    "id": 7,
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400",
+    "title": "Analytics Dashboard",
+    "description": "Business analytics dashboard with charts, graphs, and real-time data visualization",
+    "tags": ["React", "D3.js", "Redux", "Material-UI"],
+    "repoLink": "https://github.com/username/analytics-dashboard",
+    "demoLink": "https://analytics-demo.netlify.app"
+  },
+  {
+    "id": 8,
+    "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400",
+    "title": "Recipe Finder",
+    "description": "Recipe search and management app with filters, favorites, and meal planning features",
+    "tags": ["Angular", "TypeScript", "API Integration"],
+    "repoLink": "https://github.com/username/recipe-finder",
+    "demoLink": "https://recipe-finder-demo.com"
+  },
+  {
+    "id": 9,
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400",
+    "title": "Chat Application",
+    "description": "Real-time chat application with private messaging, group chats, and file sharing",
+    "tags": ["Socket.io", "Node.js", "React", "MongoDB"],
+    "repoLink": "https://github.com/username/chat-application",
+    "demoLink": "https://chat-app-demo.herokuapp.com"
+  },
+  {
+    "id": 10,
+    "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400",
+    "title": "Fitness Tracker",
+    "description": "Workout tracking app with exercise logs, progress charts, and goal setting features",
+    "tags": ["React Native", "Firebase", "Redux Toolkit"],
+    "repoLink": "https://github.com/username/fitness-tracker",
+    "demoLink": "https://fitness-tracker-demo.com"
+  }
+]
