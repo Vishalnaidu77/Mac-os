@@ -10,6 +10,7 @@ const WindowContext = ({ children }) => {
             resume: false,
             spotify: false,
             cli: false,
+            calender: false
         })
 
   return (

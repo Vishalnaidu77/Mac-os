@@ -9,6 +9,7 @@ import Resume from './Components/Windows/Resume'
 import Spotify from './Components/Windows/Spotify'
 import Cli from './Components/Windows/Cli'
 import { WindowContextData } from './context/WindowContext'
+import Calender from './Components/Windows/Calender'
 
 const App = () => {
 
@@ -23,6 +24,7 @@ const App = () => {
       {activeWindow.resume && <Resume windowName="resume" />}
       {activeWindow.spotify && <Spotify windowName="spotify" />}
       {activeWindow.cli && <Cli windowName="cli" />}
+      {activeWindow.calender && <Calender windowName="calender" />}
     </main>
   )
 }
