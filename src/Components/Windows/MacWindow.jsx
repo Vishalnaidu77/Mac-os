@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Rnd } from "react-rnd"
 import "../Windows/window.scss"
+import { WindowContextData } from '../../context/WindowContext'
 
-const MacWindow = ({ children, width="40vw", height="40vh" }) => {
+const MacWindow = ({ children, width="40vw", height="40vh", windowName }) => {
+
+    const  { setActiveWindow } = useContext(WindowContextData)
+
   return (
     <Rnd
     default={{
@@ -15,7 +19,7 @@ const MacWindow = ({ children, width="40vw", height="40vh" }) => {
         <div className="window">
             <div className="nav">
                 <div className="dots">
-                    <div className="dot red"></div>
+                    <div className="dot red" onClick={() => setActiveWindow(state => ({ ...state, [windowName]: false}))}></div>
                     <div className="dot yellow"></div>
                     <div className="dot green"></div>
                 </div>

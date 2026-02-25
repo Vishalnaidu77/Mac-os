@@ -3,8 +3,8 @@ import githubData from "../../assets/github.json"
 import MacWindow from './MacWindow'
 import "./github.scss"
 
-const GitCard = ({ data={ id: 1, image: "", title: "", description: "", tags: [], repoLink: "", demoLink: "" }}) => {
-    return <div className="card">
+const GitCard = ({ data={ id: 1, image: "", title: "", description: "", tags: [], repoLink: "", demoLink: "" }, id }) => {
+    return <div className="card" key={id}>
         <img src={data.image} alt="" />
         <h1>{data.title}</h1>
         <p className='description'>{data.description}</p>
@@ -20,12 +20,12 @@ const GitCard = ({ data={ id: 1, image: "", title: "", description: "", tags: []
     </div>
 }
 
-const Github = () => {
+const Github = ({ windowName }) => {
   return (
-    <MacWindow>
+    <MacWindow windowName={windowName}>
         <div className="cards">
-            {githubData.map(project => {
-                return <GitCard data={project}/>
+            {githubData.map((project, idx) => {
+                return <GitCard id={idx} data={project}/>
             })}
         </div>
     </MacWindow>

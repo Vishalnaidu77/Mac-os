@@ -3,7 +3,7 @@ import MacWindow from './MacWindow'
 import Terminal from 'react-console-emulator'
 import "./cli.scss"
 
-const Cli = () => {
+const Cli = ({ windowName }) => {
 
   const commands = {
     about: {
@@ -35,7 +35,7 @@ const Cli = () => {
 
   const welcomeMsg = `
 ╔════════════════════════════════════════════════════════════╗
-║          Welcome to Vishal Naidu's Terminal               ║
+║          Welcome to Vishal Naidu's Terminal                ║
 ╚════════════════════════════════════════════════════════════╝
 
 Type 'help' to see all available commands.
@@ -44,7 +44,7 @@ Try: about, projects, skills, contact, or echo <text>
 
   return (
     <div>
-      <MacWindow>
+      <MacWindow windowName={windowName} >
         <div className="cli-window">
             <Terminal 
                 commands={commands}
