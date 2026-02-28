@@ -13,8 +13,10 @@ const WindowContext = ({ children }) => {
             calender: false
         })
 
+      const [zIndex, setZindex] = useState(11)
+
   return (
-    <WindowContextData.Provider value={{ activeWindow, setActiveWindow }}>
+    <WindowContextData.Provider value={{ activeWindow, setActiveWindow, zIndex, setZindex }}>
       {children}    
     </WindowContextData.Provider>
   )
