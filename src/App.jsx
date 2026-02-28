@@ -20,8 +20,6 @@ const App = () => {
   const [positionY, setPositionY] = useState(null)
   const [activeContextMenu, setActiveContextMenu] = useState(false)
 
-  console.log(positionX, positionY);
-
   // Disable context menu in browser
   useEffect(() => {
     const handleContextMenu = (e) => {
@@ -39,14 +37,6 @@ const App = () => {
     }
 
   }, [])
-
-  // const checkKey = () => {
-  //   document.addEventListener("keydown", (e) => {
-  //     console.log(e)
-  //   })
-  // }
-
-  // checkKey()
 
   return (
     <main onClick={() => setActiveContextMenu(false)}>

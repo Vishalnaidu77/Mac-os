@@ -5,10 +5,17 @@ import { WindowContextData } from '../../context/WindowContext'
 
 const MacWindow = ({ children, width="40vw", height="40vh", windowName }) => {
 
-    const  { setActiveWindow, zIndex, setZIndex } = useContext(WindowContextData)
+    const  { setActiveWindow, index, setIndex } = useContext(WindowContextData)
+    let currIndex = 1;
+    
+    Object.keys(index).forEach(key => {
+        if (key === windowName) {
+            currIndex = index[key]
+        }
+    })
 
   return (
-    <div style={{ position: "absolute", zIndex: zIndex }}>
+    <div style={{ position: "absolute", zIndex: currIndex }}>
         <Rnd
         default={{
             width: width,
@@ -18,7 +25,16 @@ const MacWindow = ({ children, width="40vw", height="40vh", windowName }) => {
         }}
         >
             <div 
-            className="window" onClick={() => setZIndex(state => state + 1)}
+            className="window" 
+            onMouseDown={() => {
+              Object.keys(index).forEach(key => {
+                if (key === windowName) {
+                    setIndex(state => ({ ...state, [key]: 1 }))
+                } else {
+                    setIndex(state => ({ ...state, [key]: 0 }))
+                }
+              })  
+            }}
             >
                 <div className="nav">
                     <div className="dots">
